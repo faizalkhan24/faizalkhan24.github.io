@@ -14,7 +14,18 @@
     <meta charset="utf-8">
 <title>Faizal Khan - Web Developer Portfolio</title>
 
-
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('meta_tag.html')
+                .then(response => response.text())
+                .then(data => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+                    const head = document.head;
+                    doc.querySelectorAll('meta').forEach(meta => head.appendChild(meta));
+                });
+        });
+    </script>
 
     <meta name="google-adsense-account" content="ca-pub-8790655614720711">
     <link href="img/favicon.ico" rel="icon">
