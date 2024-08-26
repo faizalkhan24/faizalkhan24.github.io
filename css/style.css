@@ -7,6 +7,55 @@
 }
 
 
+.product-ad {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 15px;
+}
+
+.buy-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #cc7a00;
+}
 
 
 /* Add CSS styles for image slider */
